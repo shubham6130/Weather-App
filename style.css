@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #222;
+}
+
+.card {
+    /* Sets width to 90% of parent container, with a maximum width of 470px */
+    width: 90%;
+    max-width: 470px;
+
+    /* Gradient background from teal (#00feba) to purple (#5b548a) at 135° angle */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+
+    /* Sets text color to white */
+    color: #fff;
+
+    /* Margin: 100px top, auto (centers horizontally), 0 bottom */
+    margin: 100px auto 0;
+
+    /* Rounded corners (20px radius) */
+    border-radius: 20px;
+
+    /* Internal spacing: 40px top/bottom, 35px left/right */
+    padding: 40px 35px;
+
+    /* Centers all inline/text content horizontally */
+    text-align: center;
+}
+
+/* Search */
+
+.search {
+    /* Takes full width of its parent (.card) */
+    width: 100%;
+
+    /* Enables Flexbox layout for child elements */
+    display: flex;
+
+    /* Vertically centers child elements (like input and button) */
+    align-items: center;
+
+    /* Pushes children (input and button) to opposite ends with maximum space between */
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;          /* Removes default border */
+    outline: 0;         /* Removes focus outline */
+    background: #ebfffc; /* Light cyan background */
+    color: #555;        /* Dark gray text color */
+    padding: 10px 25px; /* 10px top/bottom, 25px left/right padding */
+    height: 60px;       /* Fixed height of 60px */
+    border-radius: 30px; /* Fully rounded corners (30px = half of height) */
+    flex: 1;            /* Expands to fill available space */
+    margin-right: 16px; /* Adds 16px space between input and button */
+    font-size: 18px;    /* Larger text size */
+}
+
+.search button{
+    border: 0;         
+    outline: 0;        
+    background: #ebfffc; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 20px;
+}
+
+/* Weather */
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;        /* Activates Flexbox layout */
+    align-items: center;  /* Vertically centers child elements */
+    text-align: left;     /* Aligns text to the left */
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
